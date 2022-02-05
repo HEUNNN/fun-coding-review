@@ -50,6 +50,7 @@ header {
     width: 100%;
     height: 100%;
     display: flex;
+    font-size: 1.2rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -204,20 +205,27 @@ section {
 .slide-prev {
     font-size: 1.7rem;
     cursor: pointer;
+    color: #cfd8dc;
 }
-
+.slide-prev-hover:hover {
+    transition: transform 0.5s;
+    transform: translateX(-3px);
+}
 .slide-next {
     font-size: 1.7rem;
     cursor: pointer;
-    color: #cfd8dc;
+    color: rgb(47, 48, 89);
 }
-
+.slide-next-hover:hover {
+    transition: transform 0.5s;
+    transform: translateX(+3px);
+}
 .class-list {
     display: flex;
     list-style: none;
     padding: 1rem 0;
     margin: 0;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .class-card {
@@ -266,6 +274,11 @@ section {
 .class-description {
     width: 100%;
     margin-top: 1rem;
+    color: #545e6f;
+}
+
+.class-description:hover {
+    color: #2186c4;
 }
 
 .class-title {
@@ -273,13 +286,21 @@ section {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #545e6f;
+    color: inherit;
 }
 
 .class-detail {
     font-size: 0.9rem;
     line-height: 1.5rem;
-    color: #545e6f;
+    color: inherit;
+}
+
+ul li img:hover {
+    cursor: grab;
+}
+
+ul li img:active {
+    cursor: grabbing;
 }
 
 .roadmap-description {
@@ -315,3 +336,37 @@ footer {
     font-size: 0.98rem;
 }
 
+#backtotop {
+    background-color: rgb(47, 48, 89);
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    visibility: hidden;
+    transition-property: background-color, opacity, visibility;
+    transition-duration: 0.3s, 0.5s, 0.5s;
+    opacity: 0;
+    z-index: 999;
+}
+
+#backtotop::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+    line-height: 40px;
+    color: white;
+}
+
+#backtotop.show {
+    opacity: 1;
+    visibility: visible;
+    background-color: rgb(47, 48, 89);
+}
+
+#backtotop.show:hover {
+    background-color: #2186c4;
+    cursor: pointer;
+}
