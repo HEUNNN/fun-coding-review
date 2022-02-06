@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="잔재미 코딩 실습">
+    <meta name="keyword" content="onLine Lecture">
+    <meta name="author" content="Dave Lee">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+    <title>web pratice, html</title>
+    <!-- Open Graph (Facebook, Linkedin에서 사용하는 방식)-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="잔재미코딩 온라인 강의 사이트 입니다.">
+    <meta property="og:description" content="잔재미코딩 온라인 강의 리스트">
+    <meta property="og:img" content="/Users/leehyeeun/Desktop/Actual_test/img/fun-coding-mark.png">
+    <meta property="og:url" content="https://www.fun-coding.org">
+    <meta property="og:site_name" content="잔재미 코딩">
+
+    <!-- Twitter card (Twitter에서 사용하는 방식)-->
+    <meta name="twitter:card" content="summary">
+    <!--card 종류: summary, photo, paler-->
+    <meta name="twitter:title" content="잔재미 코딩">
+    <meta name="twitter:description" content="잔재미코딩 온라인 강의 리스트">
+    <meta name="twitter:image" content="img/fun-coding-mark.png">
+    <meta name="twitter:creator" content="Dave Lee">
+
+    <!--일반적인 fabicon 설정-->
+    <link rel="icon" href="/Users/leehyeeun/Desktop/Actual_test/img/fun-coding.ico">
+    <!--아이폰용 fabicon 설정-->
+    <link rel="apple-touch-icon" href="/Users/leehyeeun/Desktop/Actual_test/img/fun-coding.ico">
+    <!--IE용 fabicon-->
+    <link rel="short icon" href="/Users/leehyeeun/Desktop/Actual_test/img/fun-coding.ico">
+
+    <!--CSS reset-->
+    <link rel="stylesheet" href="/Users/leehyeeun/Desktop/Actual_test/CSS/normalize.css" />
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/f7c1fec306.js" crossorigin="anonymous"></script>
+    <!--CSS 파일을 만들기 시작할 때, 해당 폰트를 사용하도록 설정해야함(폰트이름: Spoca Han Sans Neo)-->
+    <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <!--해당 website에 적용할 CSS 파일 적용-->
+    <link rel="stylesheet" href="/Users/leehyeeun/Desktop/fun-coding_review/style.css">
+    <!--CSS reset code를 상단에 적어줘야 한다. 링크를 걸어준 style.css 파일이 초기화될 수 있음-->
+
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <div class="head-container">
+                <div class="head-brand" href="https://www.fun-coding.org/" target="blank">잔재미코딩</div>
+                <div class="head-blog" href="https://www.fun-coding.org/daveblog.html" target="blank">잔재미코딩 블로그 모음</div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="main">
+            <!-- class 가 inner 아닌 이유: CSS로 background img를 넣을 거라서 inner는 그렇지 않기에 다른 배경이미지를 삽입하기 위한 main class 생성-->
+            <!--inner class는 width:100%, height:100%이며 화면의 폭이 특정 이상이 되어도 max-width를 설정해두어 더이상 width가 넓어지지 않게 하는 class-->
+            <!--main과 main container는 max-width를 정할 필요가 없어서 따로 class를 지정하는 이유도 있다.-->
+            <div class="main-container">
+                <div class="title-container">
+                    <div class="title">광고보다 강의에 집중합니다.</div>
+                    <div class="message">전자책보다 좋은 자료와 현업의 경험을 함께<br>검증된 온라인 강의를<br>검증된 온라인 플랫폼에서 제공합니다.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="inner">
+            <div class="skill-container">
+                <div class="skill">
+                    <i class="fab fa-python skill-icon python-style"></i>
+                    <div class="skill-title">
+                        <div class="skill-name">업무 자동화</div>
+                        <div class="skill-usage">크롤링/자동매매</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <i class="far fa-chart-bar skill-icon chart-style"></i>
+                    <div class="skill-title">
+                        <div class="skill-name">데이터 분석</div>
+                        <div class="skill-usage">데이터 분석/SQL</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-app-store-ios skill-icon ai-style"></i>
+                    <div class="skill-title">
+                        <div class="skill-name">AI</div>
+                        <div class="skill-usage">인공지능 활용</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-vuejs skill-icon vuejs-style"></i>
+                    <div class="skill-title">
+                        <div class="skill-name">풀스택</div>
+                        <div class="skill-usage">웹/앱 서비스</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="inner">
+            <div class="roadmap-container">
+                <div class="roadmap-title-container">
+                    <div class="roadmap-title">잔재미코딩 관련 블로그 및 서적</div>
+                    <div class="arrow-container">
+                        <i class="slide-prev fas fa-chevron-circle-left"></i>
+                        <i class="slide-next fas fa-chevron-circle-right"></i>
+                    </div>
+                </div>
+                <ul class="class-list">
+                    <li class="class-card">
+                        <!-- class-card 하나 -->
+                        <img src="/Users/leehyeeun/Desktop/Actual_test/img/fun-coding-classlist-img1.jpeg"
+                            alt="잔재미코딩 블로그" class="class-img">
+                        <a href="https://blog.naver.com/leehe0430" target="_blank">
+                            <div class="class-container">
+                                <div class="class-skill">
+                                    <div class="class-type">학습방법</div>
+                                    <div class="class-format">블로그</div>
+                                </div>
+                                <div class="class-description">
+                                    <div class="class-title">IT는 배우는 방법을 익혀야 합니다</div>
+                                    <div class="class-detail">비전공자가 IT를 배우는 전략</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="inner">
+            <div class="footer-message">합리적인 분들과 좋은 컨텐츠가 지속될 수 있는 선순환 시스템을 지향합니다.</div>
+            <div class="footer-contact">contact: dream@fun-coding.org</div>
+            <div class="footer-copyright">Copyright 2022 @ All rights reserved</div>
+        </div>
+    </footer>
+</body>
+
+</html>
